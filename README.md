@@ -5,7 +5,7 @@ Key Components:
 1. Libraries: Increasing the quality of the image to aid in text recognition. Using Libraries such as keras_ocr and Open_cv is used to detect text areas in the image.
 2. Text Detection:Producing predictions and the position of the image using subplots and predictions obtained through keras ocr.
 3. Post-processing: The output thus obtained is then sorted by finding distance of the text from the origin and then inserting it into a dataframe.
-Functions in the main FILE
+4. Functions in the main FILE
 1. Process_image(images): Takes a list of path of images to process and using pipeline object predicts the string and position of the text on the image. Also, usessubplots to draw boxes around the text
 2. get_distance(predictions): It takes the predictions obtained using pipeline and will return a dictionary of text, its centre coordinates, and distance from origin and distance between origin and y-ordinate.
 3. distingush_rows(list, threshold_value): takes two parameters first is list of the dictionary obtained using get_distance and second is a threshold value used to determine the rows uniquely.
